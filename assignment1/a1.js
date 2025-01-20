@@ -21,7 +21,7 @@ rl.question("Do you wish to process a File (f) or Directory (d): ", (userInput) 
             fs.readFile(fileInput, (err, fileData) =>
             { 
                 if(err){
-                    console.log(err.message);
+                    console.log(`Error in opening the file ${err.message}`);
                 }
                 else{
                     let contentString = fileData.toString().replace(/\s+/g, ' '); 
@@ -49,7 +49,7 @@ rl.question("Do you wish to process a File (f) or Directory (d): ", (userInput) 
         {
             fs.readdir(userInput, function (err, filesArray) {
                 if (err){
-                     console.log(err.message);
+                     console.log(`Error in opening the Directory  ${err.message}`);
                 }
                 else {
 
