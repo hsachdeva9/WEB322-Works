@@ -13,7 +13,7 @@ function initialize()
     {
         sectorData.forEach((secData) =>
             {
-                if( secData.id === data.sector_id)
+                if( secData && secData.id === data.sector_id)
                 {
                     data.sector = secData.sector_name;
                     
@@ -61,7 +61,7 @@ function getProjectById(projectId)
         }
         else 
         {
-            reject(`Unable to find object by ID ${projectID}`)
+            reject(`Unable to find object by ID ${projectId}`)
         }
 
 })
@@ -75,7 +75,7 @@ function getProjectsBySector(sector)
      
    let data = projects.filter((data) =>
     data.sector.toLowerCase().includes(sector.toLowerCase()) )
-   if (data)
+   if (data.length> 0)
     {
         resolve(data)
     }
