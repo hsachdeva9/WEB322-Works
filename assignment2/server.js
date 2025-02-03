@@ -32,6 +32,4 @@ app.get('/solutions/projects/sector-demo', (req, res) => {
   .catch((message)=> res.send(message))
 })
 
-
-//app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-module.exports = app;
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
