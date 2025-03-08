@@ -1,3 +1,15 @@
+/******************************************************************************** 
+*  WEB322 – Assignment 02 
+*  
+*  I declare that this assignment is my own work in accordance with Seneca's 
+*  Academic Integrity Policy: 
+*  
+*  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html 
+*  
+*  Name: Hitesh Sachdeva Student ID: 111287231  Date: 03/02/2025 
+* 
+********************************************************************************/ 
+
 const projectData = require("./modules/projects");
 
 const express = require('express')
@@ -12,6 +24,7 @@ projectData.initialize()
 app.get('/', (req, res) => res.send("Assignment 2:  Hitesh Sachdeva - 111287231"));
 
 app.get('/solutions/projects', (req, res) => {
+  
   projectData.getAllProjects()
  .then((data)=> res.send(data))
   .catch((message)=> res.send(message))
