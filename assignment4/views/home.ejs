@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Climate Solutions</title>
+</head>
+<body>
+  <%- include('partials/navbar',{page: ''}) %>
+        <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost sm:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content right-0 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Link</a></li>
+              <li>
+                <details>
+                  <summary>
+                    Parent
+                  </summary>
+                  <ul class="p-2 bg-base-100">
+                    <li><a>Link 1</a></li>
+                    <li><a>Link 2</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="container mx-auto">
+        <div class="hero bg-base-200 rounded-lg p-6">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Explore Our Projects</h1>
+                <p class="py-6">
+                    Discover innovative solutions and exciting projects that showcase creativity and technology
+                </p>
+                 <a href="/solutions/projects" class="btn btn-primary">View Projects</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img class="w-full" src="https://drawdown.org/sites/default/files/solutions/solution_farmlandrestoration01.jpg" alt="Abandoned Farmland Restoration" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Abandoned Farmland Restoration</h2>
+                      <p>Restoration can bring degraded farmland back into productivity and sequester carbon in the process.</p>
+                      <div class="card-actions justify-end">
+                        <a href="/solutions/projects/1" class="btn btn-primary">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img class="w-full" src="https://drawdown.org/sites/default/files/solutions2020/solution_alternativecement02.jpg" alt="Alternative Cement" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Alternative Cement</h2>
+                      <p>Conventional cement production is a significant source of carbon dioxide. Reformulation can reduce emissions by millions of metric tons each year.</p>
+                      <div class="card-actions justify-end">
+                        <a href="/solutions/projects/2" class="btn btn-primary">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                      <img class="w-full" src="https://drawdown.org/sites/default/files/solutions/solution_farmlandirrigation01.jpg" alt="Farm Irrigation Efficiency" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Farm Irrigation Efficiency</h2>
+                      <p>Drip and sprinkler irrigation, among other practices and technologies, make farm water use less energy/fuel intensive and conserve significant amounts of freshwater.</p>
+                      <div class="card-actions justify-end">
+                        <a href="/solutions/projects/5" class="btn btn-primary">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+      </div>
+</body>
+</html>
